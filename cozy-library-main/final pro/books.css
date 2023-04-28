@@ -28,17 +28,62 @@ nav{
   position: fixed;
   z-index: 1;
   box-shadow: 1px  1px 20px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav img{
+nav > div> a >img{
   width: 42px;
   height: 42px;
 }
-nav .logo{
+nav >.logo >a{
   width: 300px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo a {
+  cursor: default;
+}
+.logo h1,.logo img:hover{
+  cursor: pointer;
+}
+nav > .menu{
+  width: 40%;
+  display: flex;
+  color: rgb(14, 9, 9);
+  justify-content: space-around;
+  align-items: center;
+}
+nav > .menu > a{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: 10px;
+  transition: background-color .3s ease-in, color .3s ease-in;
+  text-decoration: none;
+  color: rgb(14, 9, 9);
+}
+nav > .menu > a:hover{
+ background-color: rgb(97, 100, 100);
+ color: white;
+ cursor: pointer;
+}
+nav .sign{
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+}
+nav >.sign >img{
+  width: 100%;
+  height: 100%;
 }
 
 /* showcase styling */

@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="png" href="images/icon/favicon.png" />
+    <link rel="icon" type="png" href="books/cozy logo.png" />
     <title>Login SignUp</title>
     <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="stylesheet" type="text/css" href="books.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <!-- It will redirect to the Home Page after submitting the form -->
-    <script>
-      $(document).ready(function () {
-        $("form").submit(function () {
-          alert("Great Job !");
-        });
-      });
-    </script>
+   
   </head>
   <body>
     <div class="mainContainer">
         <header>
           <nav>
             <div class="logo">
-              <img src="books/cozy logo.png" alt="logo">
-              <h1>COZY E-LIBRARY</h1>
+              <a href="home.html">
+                <img src="books/cozy logo.png" alt="logo">
+                <h1>COZY E-LIBRARY</h1>
+              </a>
+            </div>
+            <div class="menu">
+              <a href="home.html"  style="border: 2px solid rgb(97, 100, 100)"><div>HOME</div></a>
+              <a href="Books.html"><div>BOOKS</div></a>
+              <a href=""><div>ARTICLES</div></a>
+              <a href=""><div>ABOUT</div></a>
             </div>
           </nav>
         </header>
